@@ -20,7 +20,6 @@ public interface SubcursoRepository extends JpaRepository<Subcurso, Long> {
     // Metodo para obtener subcursos asignados a un profesor por su ID
     @Query("SELECT s FROM Subcurso s JOIN s.asignacionesProfesor ap WHERE ap.profesor.usuarioId = :usuarioId")
     List<Subcurso> findSubcursosByProfesorId(@Param("usuarioId") Long usuarioId);
-    
 
     boolean existsByNombreIgnoreCaseAndNivel(String nombre, Nivel nivel);
 }

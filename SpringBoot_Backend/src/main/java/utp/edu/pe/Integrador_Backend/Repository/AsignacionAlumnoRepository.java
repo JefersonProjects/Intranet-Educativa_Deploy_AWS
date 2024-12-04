@@ -11,9 +11,6 @@ import java.util.List;
 @Repository
 public interface AsignacionAlumnoRepository extends JpaRepository<AsignacionAlumno, Long> {
 
-    // Encontrar asignaciones por alumno
-    List<AsignacionAlumno> findByAlumno(Alumno alumno);
-
     // Eliminar las asignaciones de los alumnos para un subcurso específico
     void deleteBySubcurso(Subcurso subcurso);
 

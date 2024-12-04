@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "SOP_ASIGNACION_ALUMNO_DETALLE")
 public class AsignacionAlumno {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "C_ASIGNACIONALUMNOID")  // Clave primaria

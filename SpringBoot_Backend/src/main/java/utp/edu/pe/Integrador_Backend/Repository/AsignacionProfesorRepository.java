@@ -24,5 +24,4 @@ public interface AsignacionProfesorRepository extends JpaRepository<AsignacionPr
     // Obtener el profesor que tiene asignado un subcurso
     Optional<AsignacionProfesor> findBySubcurso_SubcursoId(Long subcursoId);
 
-    List<AsignacionProfesor> findByProfesor(Profesor profesor);
 }
